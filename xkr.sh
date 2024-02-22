@@ -1,2 +1,2 @@
 chmod +x xmrig
-./xmrig -c config-xkr.json
+nohup ./xmrig -c config-xkr.json >xkr.log 2>&1 &
