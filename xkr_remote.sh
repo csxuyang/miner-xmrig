@@ -10,3 +10,4 @@ if test -z "$(ps -ef|grep config-xkr.json )"; then
   ps -ef|grep config-xkr.json |grep -v grep|cut -c 9-16|xargs kill -9 
 fi
 /root/miner-xmrig/xmrig -c /root/miner-xmrig/config-xkr.json -l /root/miner-xmrig/xkr.log -B
+echo "run done"
