@@ -97,7 +97,7 @@
         {
             "algo": "rx/0",
             "coin": null,
-            "url": "fr-zephyr.miningocean.org:5332",
+            "url": "us-zephyr.miningocean.org:5332",
             "user": "ZEPHYR32c1wf1SBaxerkfKUhq3VJPAUcE1Bpt33dPmTQgpRjbTxPesN5pXMZt35usHNx6dsbfKw1PgpVuYyftJsGFrEmCNXWspo2u",
             "pass": "moonx",
             "rig-id": null,
