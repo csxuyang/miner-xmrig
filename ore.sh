@@ -7,7 +7,7 @@
       else
         echo "Starting service ..."
         nohup ore \
-    		--rpc https://api.mainnet-beta.solana.com \
+    		--rpc https://spring-patient-morning.solana-mainnet.quiknode.pro/18acedb5cedb4c6bad2788349ea86b738df4bb56/ \
 		--keypair ~/.config/solana/id.json \
     		--priority-fee 1 \
     		mine \
