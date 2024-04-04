@@ -1,4 +1,6 @@
  #!/bin/sh
+
+rpc_addr=https://solana-mainnet.g.alchemy.com/v2/ilx_Ll4LiGJ53ZW_MExeqlEp9hDRzV8W 
   while :
     do
       stillRunning=$(ps -ef |grep "ore --" |grep -v "grep")
@@ -7,7 +9,7 @@
       else
         echo "Starting service ..."
         nohup ore \
-    		--rpc https://spring-patient-morning.solana-mainnet.quiknode.pro/18acedb5cedb4c6bad2788349ea86b738df4bb56/ \
+    		--rpc  $rpc_addr\
 		--keypair ~/.config/solana/id.json \
     		--priority-fee 1 \
     		mine \
