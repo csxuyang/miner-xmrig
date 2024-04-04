@@ -1,6 +1,5 @@
  #!/bin/sh
 
-rpc_addr=https://solana-mainnet.g.alchemy.com/v2/ilx_Ll4LiGJ53ZW_MExeqlEp9hDRzV8W 
   while :
     do
       stillRunning=$(ps -ef |grep "ore --" |grep -v "grep")
