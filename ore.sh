@@ -2,7 +2,7 @@
 
   while :
     do
-      stillRunning=$(ps -ef |grep "ore --" |grep -v "grep")
+      stillRunning=$(ps -ef |grep " mine " |grep -v "grep")
       if [ "$stillRunning" ] ; then
         echo "ORE service was already started by another way"
       else
