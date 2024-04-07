@@ -10,7 +10,7 @@
         nohup ore \
     		--rpc  $rpc_addr\
 		--keypair ~/.config/solana/id.json \
-    		--priority-fee 10000000 \
+    		--priority-fee 10 \
     		mine \
     		--threads 4 \
     		> ore.log  2>&1 &
