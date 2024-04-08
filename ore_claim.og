@@ -1,0 +1,37 @@
+Submitting claim transaction...
+Attempt: 0
+2W2ZxUPKyXebPzCEGWcJUDhg6rB1P4sR7QHnWP3hmFDxLf1i9JVK1UkmGGk5QZLgVAn3xHDEoHPndDMsAeco3beG
+Confirms: [None]
+Confirms: [None]
+Confirms: [None]
+Confirms: [None]
+Transaction did not land
+Attempt: 1
+YCLPdw2EvJZsBfowpDzbUSfyEoykKRMq3CXyGjjUBusL9yuZwXf7H1HwASkuA82aY5zUQcGKrqyxyxSnBLbj73j
+Confirms: [None, None]
+Confirms: [None, None]
+Confirms: [None, None]
+Confirms: [None, None]
+Transaction did not land
+Attempt: 2
+2H97pkYMGRtfkzZdPuV5q2b8YcsFza3yd2VuYAgzEDWcekeFf4Skx7iWfivqJeVcHurrM65sw7y5rknMHfpKZb6S
+Confirms: [None, None, None]
+Confirms: [None, None, None]
+Confirms: [None, None, None]
+Confirms: [None, None, None]
+Transaction did not land
+Attempt: 3
+c8reNSkf2NQrAv9DH57ZdgZ4vagMHTMBvTSLoohkPCKw5G7EvGU3zecvBiAHKp8YpuCLA88kULaQZFCqJ5J9aL4
+Confirms: [None, None, None, None]
+Confirms: [None, None, None, None]
+Confirms: [None, None, None, None]
+Confirms: [None, None, None, None]
+Transaction did not land
+Attempt: 4
+3FDqJb2zuCYimd6WoqKXrAU3b1r2My1KuGPqWmB48gfchay17zQERbnpV4jcbTNwxMvDRxLAjhSCRAt21jEvMqvw
+Confirms: [None, None, None, None, None]
+Confirms: [None, None, None, None, None]
+Confirms: [None, None, None, None, None]
+Confirms: [None, None, None, None, None]
+Transaction did not land
+Error: Error { request: None, kind: Custom("Max retries") }
