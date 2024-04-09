@@ -1,6 +1,5 @@
 balance=`ore --rpc https://api.mainnet-beta.solana.com --keypair ~/.config/solana/id.json rewards`
-balance="0.000199382 ORE"
-limit="0.001"
+limit="0.01"
 echo $balance
 IFS=' '
 array=($balance)
