@@ -3,7 +3,7 @@ while :
 do
 
 	balance=`ore --rpc https://api.mainnet-beta.solana.com --keypair ~/.config/solana/id.json rewards`
-	limit="0.001"
+	limit="0.01"
 	echo $balance
 	IFS=' '
 	array=($balance)
