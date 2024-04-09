@@ -12,7 +12,7 @@ do
 
 	if [ `expr $real \> $limit` -eq 1 ] ; then
 	   echo 'balance is '$balance',claim'
-	   ore --rpc https://api.mainnet-beta.solana.com --keypair ~/.config/solana/id.json --priority-fee 100000   claim
+	   ore --rpc https://wallet.okex.org/fullnode/sol/discover/rpc --keypair ~/.config/solana/id.json --priority-fee 100000   claim
 	else
 	   echo 'balance is '$balance',not claim'
 	fi 
