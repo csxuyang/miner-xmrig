@@ -1,4 +1,5 @@
  #!/bin/sh
+source ore.env
 while :
 do
 
@@ -12,7 +13,7 @@ do
 
 	if [ `expr $real \> $limit` -eq 1 ] ; then
 	   echo 'balance is '$balance',claim'
-	   ore --rpc https://wallet.okex.org/fullnode/sol/discover/rpc --keypair ~/.config/solana/id.json --priority-fee 50000000   claim
+	   ore --rpc $rpc_addr --keypair ~/.config/solana/id.json --priority-fee 50000000   claim
 	else
 	   echo 'balance is '$balance',not claim'
 	fi 
