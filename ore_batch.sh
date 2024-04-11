@@ -21,9 +21,9 @@ mine() {
 source ore.env
 while true; do
  
-  for i in {0..0}; do
+  for i in {0..1}; do
     mine "/root/.config/solana/id${i}.json" "${i}"
-    sleep 120
   done
   
+  sleep 120
 done
