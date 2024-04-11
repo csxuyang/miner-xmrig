@@ -9,7 +9,7 @@ mine() {
 	echo "Starting service ${keyfile} ..."
 	nohup ore \
 			--rpc  $rpc_addr\
-			--priority-fee 5000 \
+			--priority-fee 50000 \
 			--keypair $keyfile mine \
 			--threads 4 \
 			> ore${2}.log  2>&1 &
