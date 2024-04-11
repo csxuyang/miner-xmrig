@@ -21,7 +21,7 @@ mine() {
 source ore.env
 while true; do
  
-  for i in {0..1}; do
+  for i in {0..4}; do
     mine "/root/.config/solana/id${i}.json" "${i}"
   done
   
