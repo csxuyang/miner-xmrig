@@ -17,7 +17,7 @@ nohup /root/ore-cli-mod/target/release/ore \
                 --priority-fee 50000 \
                 mine \
                 --threads 4 \
-		> ore2.log  2>&1 &
+		> ore3.log  2>&1 &
 
       fi
       sleep 10
