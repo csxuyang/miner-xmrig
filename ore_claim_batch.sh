@@ -37,7 +37,7 @@ check_and_claim() {
 
 # 初始化總獎勵變量
 total_reward=0
-
+source ore.env
 while true; do
   # 在每次循环开始时重置总奖励
   total_reward=0
