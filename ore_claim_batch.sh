@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 可配置的奖励数量阈值
-REWARD_THRESHOLD=0.01
+REWARD_THRESHOLD=0.002
 
 # 函数：检查奖励并在大于配置的阈值时进行认领
 check_and_claim() {
@@ -43,8 +43,8 @@ while true; do
   total_reward=0
 
   # 对每个文件执行检查和认领操作
-  for i in {0..14}; do
-    check_and_claim "/root/.config/solana/id${i}.json"
+  for i in {0..5}; do
+    check_and_claim "/root/id/id${i}.json"
     # 將當前文件的獎勵加到總獎勵上
     total_reward=$(awk "BEGIN {print $total_reward + $reward}")
     sleep 3
