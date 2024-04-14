@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # 可配置的奖励数量阈值
-REWARD_THRESHOLD=0.002
+REWARD_THRESHOLD=0.004
+ADDRESS=H4S1R3GWeme3KaMAvZ21twrSzLrrk4uDpBHdYstDJfq5
 
 # 函数：检查奖励并在大于配置的阈值时进行认领
 check_and_claim() {
@@ -20,7 +21,7 @@ check_and_claim() {
     echo "奖励大于 $REWARD_THRESHOLD ORE，尝试认领..."
     # 执行认领命令，并将返回值赋给变量
   
-    claim_output=$(ore --rpc $rpc_addr  --keypair "${keyfile}" --priority-fee 50000000 claim)
+    claim_output=$(ore --rpc $rpc_addr  --keypair "${keyfile}" --priority-fee 50000000 claim $reward $ADDRESS) 
     echo "认领结果：$claim_output"
 
     # 检查认领命令的返回值
@@ -43,7 +44,7 @@ while true; do
   total_reward=0
 
   # 对每个文件执行检查和认领操作
-  for i in {0..5}; do
+  for i in {0..4}; do
     check_and_claim "/root/id/id${i}.json"
     # 將當前文件的獎勵加到總獎勵上
     total_reward=$(awk "BEGIN {print $total_reward + $reward}")
