@@ -45,7 +45,7 @@ while true; do
 
   # 对每个文件执行检查和认领操作
   for i in {0..4}; do
-    check_and_claim "~/.config/solana/id${i}.json"
+    check_and_claim "/root/.config/solana/id${i}.json"
     # 將當前文件的獎勵加到總獎勵上
     total_reward=$(awk "BEGIN {print $total_reward + $reward}")
     sleep 3
