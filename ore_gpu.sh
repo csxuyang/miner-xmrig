@@ -8,13 +8,7 @@ mine() {
   else
         echo "Starting service ${keyfile} ..."
 						
-		nohup /root/ore-cli-gpu/target/release/ore \
-			--rpc $rpc_addr \
-			--keypair $keyfile mine \
-			--priority-fee 50000 \
-			--threads 1 
-			> ore${2}.log  2>&1 &
-
+	nohup /root/ore-cli-gpu/target/release/ore --rpc $rpc_addr --keypair $keyfile mine --priority-fee 50000 --threads 1 > ore${2}.log  2>&1 &
   fi
 
 }
